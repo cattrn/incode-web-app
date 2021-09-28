@@ -39,6 +39,58 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Folder Structure
+
+```bash
+/public
+/src
+  /actions # redux actions - for storing state
+  /api # functions for calling the backend or 3rd-party api
+  /common # components that are used on all/many sites
+    /components
+      /Header
+      /Nav
+    /containers
+  /pages # entire page components, as well as any components or modules needed for specific pages go here
+    /404Page
+    /AboutPage
+    /AdminCohortPage
+    /AdminStudentsPage
+    /DashboardPage
+    /ErrorPage
+    ...
+  /reducers # redux reducers - for storing state
+  /utils # helper functions, including auth
+  App.jsx # pages and routers
+  index.jsx # entry point
+  store.js # redux store - for storing state
+package.json
+.gitignore
+.env.sample
+.eslintrc.json # eslint config
+.prettierrc.json # prettier config
+```
+
+## Dependencies
+
+**@fortawesome** Font awesome svgs (icons)
+
+**axios** API queries to the backend/3rd-party APIs
+
+**formik** forms
+
+**jsonwebtokens** authenticate users with tokens
+
+**lodash** [extra cool methods](https://lodash.com/), use if you wish, delete if you wish
+
+**react-redux & redux** state management store
+
+**react-router-dom** router for different pages
+
+**styled-components** write CSS with JS
+
+**yup** validation
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
