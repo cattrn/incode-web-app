@@ -42,7 +42,7 @@ router.put('/archive', archiveCohort)
 
 router.route('/syllabus').get(getSyllabus).post(addSyllabusModule)
 router
-  .route('syllabus/:id')
+  .route('/syllabus/:id')
   .put(updateSyllabusModule)
   .delete(deleteSyllabusModule)
 
