@@ -1,7 +1,14 @@
+import { Switch, Route } from 'react-router'
+import routes from './routes'
+
 const App = () => {
   return (
     <div className="App">
-      <h1>Code goes here!</h1>
+      <Switch>
+        {routes.map((route, i) => (
+          <Route key={i} {...route} />
+        ))}
+      </Switch>
     </div>
   )
 }
