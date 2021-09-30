@@ -15,7 +15,7 @@ package.json
 
 ## Installation
 
-After clone and cd'ing into the root directory, npm install will install dependencies in the root folder, client folder and server folder.
+After clone and cd'ing into the root directory, the script install-all will install dependencies in the root folder, client folder and server folder.
 
 ```bash
 npm run install-all
