@@ -1,4 +1,5 @@
-import Button from '../../common/components/Button'
+import StyledButton from '../../common/components/Button/Button.style.js'
+import './LoginForm.css'
 
 function LoginForm() {
   return (
@@ -10,7 +11,7 @@ function LoginForm() {
           <input name="username" />
           <label htmlFor="password">Password</label>
           <input name="password" />
-          <Button name="Login" />
+          <StyledButton name="Login" />
           <div className="Links">
             <a href="#">Sign Up</a>
             <span> | </span>
