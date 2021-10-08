@@ -1,7 +1,15 @@
+import LoginForm from './LoginForm.jsx'
+import Logo from '../../common/components/Logo'
+
 const LoginPage = () => {
   return (
-    <div>
-      <h1>Login Page</h1>
+    <div className="LoginPage">
+      <header className="Login-page-header">
+        <Logo />
+      </header>
+      <main>
+        <LoginForm />
+      </main>
     </div>
   )
 }
