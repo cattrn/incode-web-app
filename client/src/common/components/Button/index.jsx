@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types'
+import StyledButton from './Button.style'
 
 const Button = (props) => {
-  return <button className="Button">{props.name}</button>
+  return <StyledButton>{props.name}</StyledButton>
 }
 
 Button.propTypes = {
