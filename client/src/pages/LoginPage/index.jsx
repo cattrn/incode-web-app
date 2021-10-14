@@ -1,17 +1,17 @@
 import LoginForm from './LoginForm.jsx'
 import Logo from '../../common/components/Logo'
-import './index.css'
+import { PageLayout, PageHeader, PageContent } from './LoginPage.style'
 
 const LoginPage = () => {
   return (
-    <div className="LoginPage">
-      <header className="Login-page-header">
+    <PageLayout>
+      <PageHeader>
         <Logo />
-      </header>
-      <main>
+      </PageHeader>
+      <PageContent>
         <LoginForm />
-      </main>
-    </div>
+      </PageContent>
+    </PageLayout>
   )
 }
 

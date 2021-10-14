@@ -4,13 +4,14 @@ const StyledButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--primary-color);
+  background: #163888;
   border-radius: 4.5px;
-  color: var(--background-color);
+  color: #f5f5f7;
   padding: 0.3em 0;
   font-size: 1.3em;
   font-weight: 700;
   height: 3em;
   border: none;
+  width: 100%;
 `
 export default StyledButton

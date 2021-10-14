@@ -9,7 +9,7 @@
     --link-color: #6E87C1
 }
 
-
+/* 
 .LoginForm {
     display: grid;
     grid-auto-flow: column;
@@ -35,9 +35,9 @@
     font-size: 3.3em;
     font-family: 'Baloo Bhai 2', sans-serif;
     color: var(--primary-color);
-}
+} */
 
-.LoginContent {
+/* .LoginContent {
     justify-self: start;
     padding-top: 2em;
     width: 80%;
@@ -47,15 +47,15 @@
     display: grid;
     align-content: center;
     grid-gap: 2em;
-}
+} */
 
-.FormContent label {
-    color: var(--primary-color);
+/* .FormContent label {
+    color: 163888;
     text-align: end;
     font-family: 'Inter', sans-serif;
     font-size: 1.4em;
     font-weight: 700;
-}
+} */
 
 .FormContent label:nth-of-type(1) {
     grid-column: 1;
@@ -67,14 +67,14 @@
     grid-row: 2;
 }
 
-.FormContent input {
+/* .FormContent input {
     width: 13em;
     border: none;
     width: 100%;
     background-color: #FFFFFF;
     height: 2.5em;
     border-radius: 3px;
-}
+} */
 
 .FormContent input:nth-of-type(1) {
     grid-column: 2/3;
@@ -92,19 +92,19 @@
     width: 100%;
 }
 
-.Links {
+/* .Links {
     color: var(--link-color);
     text-align: center;
     font-size: 1.2em;
     grid-column: 2/3;
     grid-row: 4;
-}
+} */
 
-.Links a {
+/* .Links a {
     text-decoration: none;
     color: var(--link-color);
     font-weight: 700;
-}
+} */
 
 @media screen and (max-width: 1000px){
     .LoginForm {
