@@ -13,5 +13,11 @@ const StyledButton = styled.button`
   height: 3em;
   border: none;
   width: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+  @media (max-width: 500px) {
+    font-size: 0.9em;
+  }
 `
 export default StyledButton

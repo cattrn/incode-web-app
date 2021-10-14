@@ -18,9 +18,9 @@ function LoginForm() {
       <FormWrapper>
         <Form>
           <FormLabel htmlFor="username">Username</FormLabel>
-          <FormInput name="username" />
+          <FormInput name="username" type="text" />
           <FormLabel htmlFor="password">Password</FormLabel>
-          <FormInput name="password" />
+          <FormInput name="password" type="password" />
           <ButtonContainer>
             <Button name="Login" />
           </ButtonContainer>
