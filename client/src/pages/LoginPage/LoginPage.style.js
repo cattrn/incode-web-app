@@ -7,7 +7,7 @@ export const PageLayout = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 `
 
 export const PageHeader = styled.div`
@@ -15,14 +15,14 @@ export const PageHeader = styled.div`
   margin-top: 2em;
   margin-left: 3em;
   align-self: flex-start;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 `
 
 export const PageContent = styled.div`
   display: flex;
   justify-content: center;
   width: 76.87%;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 `
 // Login form styling
 
@@ -65,10 +65,18 @@ export const Form = styled.div`
 `
 
 export const FormLabel = styled.label`
-  color: 163888;
+  color: #163888;
   text-align: end;
   font-size: 1.4em;
   font-weight: 700;
+  &:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  &:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
 `
 
 export const FormInput = styled.input`
@@ -78,10 +86,23 @@ export const FormInput = styled.input`
   background-color: ffffff;
   height: 2.5em;
   border-radius: 3px;
+  &:nth-of-type(1) {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  &:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+`
+
+export const ButtonContainer = styled.div`
+  grid-column: 2/3;
+  grid-row: 3;
 `
 
 export const LinksWrapper = styled.div`
-  color: 6e87c1;
+  color: #6e87c1;
   text-align: center;
   font-size: 1.2em;
   grid-column: 2/3;
@@ -90,6 +111,6 @@ export const LinksWrapper = styled.div`
 
 export const Link = styled.a`
   text-decoration: none;
-  color: 6e87c1;
+  color: #6e87c1;
   font-weight: 700;
 `

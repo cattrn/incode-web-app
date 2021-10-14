@@ -7,7 +7,8 @@ import {
   FormLabel,
   FormInput,
   LinksWrapper,
-  Link
+  Link,
+  ButtonContainer
 } from './LoginPage.style'
 
 function LoginForm() {
@@ -20,7 +21,9 @@ function LoginForm() {
           <FormInput name="username" />
           <FormLabel htmlFor="password">Password</FormLabel>
           <FormInput name="password" />
-          <Button name="Login" />
+          <ButtonContainer>
+            <Button name="Login" />
+          </ButtonContainer>
           <LinksWrapper>
             <Link href="#">Sign Up</Link>
             <span> | </span>
